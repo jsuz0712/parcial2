@@ -410,13 +410,15 @@ aside#menu_para_mobiles nav a {
 
 
 
-    footer{ display: block; height: 600px;}
+    footer{ display: block; height: 800px;}
 
     footer figure#logo a img{width: 80%; padding: 0; border-radius: 10px; text-align: center; display: block; position: relative; margin: 50px auto;}
 
     footer div#info1{text-align: center; height: auto; margin: 0 auto; display: block; float: none; width: 100%; font-size: 1.2em; display: block;}
 
     footer figure{float: none; width: 100%;}
+
+    footer div#info1 p{line-height: 2em;}
 
 
 
