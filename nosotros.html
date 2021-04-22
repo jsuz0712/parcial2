@@ -36,6 +36,22 @@
 </head>
 <body>
 
+        <!-- Menu para mobiles -->
+        <aside id="menu_para_mobiles">
+            <a href="#" id="abrir">
+                <i class="fas fa-align-right"></i>
+            </a>
+            <a href="#" id="cerrar">
+                <i class="fas fa-align-left"></i>
+            </a>
+    
+            <nav id="menu-nav">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="index.html">Contacto</a>
+            </nav>
+        </aside>
+    
 
     <aside id="whatsapp-boton-flotante">
         <a href="https://wa.me/573128809668?text=Hola%20me%20gustaría%20realizar%20un%20pedido%20" class="whatsapp"
@@ -48,14 +64,14 @@
     <header>
         <article>
             <figure id="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/header.png">
                 </a>
             </figure>
             <nav id="menu.pc">
                 <a href="index.html">Inicio</a>
                 <a href="#">Nosotros</a>
-                <a href="#ancla-contacto">Contacto</a>
+                <a href="index.html">Contacto</a>
             </nav>
         </article>
     </header>
@@ -66,8 +82,6 @@
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                     <li class="glide__slide"><img src="img/human-skeleton-163715_1280.jpg"></li>
-                    <li class="glide__slide"><img src="img/1.jpg"></li>
-                    <li class="glide__slide"><img src="img/2.jpg"></li>
                   </ul>
                 </div>
 
@@ -76,6 +90,10 @@
                         <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-circle-right"></i></button>
                 </div>
             </div>
+        </section>
+
+        <section id="banner">
+            <img src="img/human-skeleton-163715_1280.jpg">
         </section>
 
         <section id="nosotros">
@@ -91,26 +109,34 @@
             <figure><img src="img/img10.jpg"></figure>
         </section>
 
-        <section id="info">
-            <div id="mision">
-            <h1>Mision</h1>
-            <p>GLOBAL LINK C&C SAS tiene como objeto principal la comercialización, distribución y venta de implantes médicos quirúrgicos, cumpliendo con los estándares de calidad requeridos para brindar nuestro mejor servicio, el cual va enfocado a la satisfacción y necesidades de nuestros clientes.</p>
-            </div>
+        <section id="nosotros">
+            <article id="somos">
+                <h1>Mision</h1>
+                <p>GLOBAL LINK C&C SAS tiene como objeto principal la comercialización, distribución y venta de implantes médicos quirúrgicos, cumpliendo con los estándares de calidad requeridos para brindar nuestro mejor servicio, el cual va enfocado a la satisfacción y necesidades de nuestros clientes.</p>
+            </article>
+            <figure><img src="img/1.jpg"></figure>
+        </section>
 
-            <div id="vision">
-                <h1>Visón</h1>
+        <section id="nosotros">
+            <article id="somos">
+                <h1>Vision</h1>
                 <p>En el 2025 GLOBAL LINK C&C SAS será una empresa líder a nivel nacional en IMPORTACIÓN Y COMERCIALIZACIÓN, de implantes médicos quirúrgicos y línea de injertos óseos, manteniendo nuestras relaciones comerciales, garantizando un excelente servicio, con crecimiento y desarrollo. </p>
-            </div>
-        </section>
+            </article>
+            <figure><img src="img/2.jpg"></figure>
+        </section>    
 
-        <section id="valores">
-            <h1>Valores</h1>
-            <p>GLOBAL LINK C&C SAS Es una compañía líder que se esmera cada día por brindar <br> RESPETO A SUS EMPLEADOS <br> TRANSPARENCIA Y HONESTIDAD <br> APRENDIZAJE Y ADAPTABILIDAD <br> CONSTANCIA <br> DESARROLLO <br> MANTENIENDO SUS ESTANDARES DE CALIDAD <br> BRINDANDO BUEN SERVICIO </p>
-        </section>
+            <section id="nosotros">
+                <article id="somos">
+                    <h1>Valores</h1>
+                    <p>GLOBAL LINK C&C SAS <br>Es una compañía líder que se esmera cada día por brindar <br>RESPETO A SUS EMPLEADOS <br>TRANSPARENCIA Y HONESTIDAD <br>APRENDIZAJE Y ADAPTABILIDAD <br>CONSTANCIA <br>DESARROLLO <br>MANTENIENDO SUS ESTANDARES DE CALIDAD <br>BRINDANDO BUEN SERVICIO</p>
+                </article>
+                <figure><img src="img/3.jpg"></figure>
+            </section>
+
+        
     </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js" integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ==" crossorigin="anonymous"></script> 
-
 
 <script>
 new Glide('.glide', {
@@ -120,4 +146,15 @@ new Glide('.glide', {
   autoplay: 2000
 }).mount()
 </script>
+
+<!-- 1°: LLamado a jQuery desde un CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+<!-- 2°: Llamado a librerías hijo de jQuery -->
+<!-- jQuery Easing -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="js/scripts.js"></script>
+
+
 </body>

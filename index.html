@@ -17,15 +17,13 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" />
 
@@ -33,6 +31,23 @@
 
 </head>
 <body>
+
+        <!-- Menu para mobiles -->
+        <aside id="menu_para_mobiles">
+            <a href="#" id="abrir">
+                <i class="fas fa-align-right"></i>
+            </a>
+            <a href="#" id="cerrar">
+                <i class="fas fa-align-left"></i>
+            </a>
+    
+            <nav id="menu-nav">
+                <a href="#ancla-inicio">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#ancla-contacto">Contacto</a>
+            </nav>
+        </aside>
+    
 
 
     <aside id="whatsapp-boton-flotante">
@@ -46,7 +61,7 @@
     <header>
         <article>
             <figure id="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/header.png">
                 </a>
             </figure>
@@ -60,6 +75,7 @@
 
     <main>
         <section id="video-loop-muted">
+            <div id="ancla-inicio"></div>
             <video width="853" height="480" preload="auto" loop muted autoplay>
                 <source src="multimedia/video.mp4" type="video/mp4">
             </video>
@@ -89,13 +105,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1203.0830756869593!2d-74.81350366460478!3d10.993598845050334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x978d3c714897f6e9!2sGlobal%20Link%20C%26C%20SAS!5e0!3m2!1ses-419!2sco!4v1618880001954!5m2!1ses-419!2sco" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-        <section id="contacto">
-            <div id="info1">
-                <h1>Cuadro De Contacto</h1> 
-                <p>Telefono: <b>+57 312 8809668</b> </p>
-                <p>Direccion: <b>Cra. 42f #75b-188b </b></p>
-                <p><b>Barranquilla,Colombia</b></p>
-            </div>
+        <section id="formu">
+            <div id="ancla-contacto"></div>
             <div id="formulario">
                 <h1>Formulario</h1>
                 <form id="formu-contact" action="" method="get">
@@ -122,12 +133,29 @@
         <!-- Logo Centrado -->
         <figure id="logo">
             <a href="index.html">
-                <img src="img/Icon.png">
+                <img src="img/logo.png">
             </a>
-
         </figure>
+        <div id="info1">
+            <h2>Cuadro De Contacto</h2> 
+            <p>Telefono: <b>+57 312 8809668</b> </p>
+            <p>Direccion: <b>Cra. 42f #75b-188b </b></p>
+            <p><b>Barranquilla,Colombia</b></p>
+            <p><b>Correos:</b> <br>Comercial@global-linkcolombia.com <br>Logistica@global-linkcolombia.com <br>Contabilidad@global-linkcolombia.com <br> Solicitudes@global-linkcolombia.com</p>
+        </div>
 
     </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js" integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ==" crossorigin="anonymous"></script>
+
+<!-- 1°: LLamado a jQuery desde un CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+<!-- 2°: Llamado a librerías hijo de jQuery -->
+<!-- jQuery Easing -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="js/scripts.js"></script>
+
 </body>
 </html>
